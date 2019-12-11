@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-//the polynomial representation of the given number
+/*the polynomial representation of the given number
+*/
 double f(double x, double c) {
     return (x*x) - c;
 }
 
-//derivative of polynomial function
+/*derivative of polynomial function
+*/
 double fderivative(double x) {
     return 2*x;
 }
 
-//newton's method for set number of iterations
+/*newton's method for set number of iterations
+*/
 double newtonsMethod(double x, int iter, double (*f)(double, double), double (*fd)(double)) {
     //create a variable holder for the initial entered value of x to feed into the polynomail function
     double xc = x;
